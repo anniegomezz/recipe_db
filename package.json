@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "cocoon": "github:nathanvda/cocoon#c24ba53",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "webpack": "^5.69.0"
+  },
+  "name": "recipe_db",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anniegomezz/recipe_db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anniegomezz/recipe_db/issues"
+  },
+  "homepage": "https://github.com/anniegomezz/recipe_db#readme",
+  "devDependencies": {}
+}
