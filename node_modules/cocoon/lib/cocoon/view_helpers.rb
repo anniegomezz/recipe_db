@@ -37,13 +37,14 @@ module Cocoon
         wrapper_class = html_options.delete(:wrapper_class)
         html_options[:'data-wrapper-class'] = wrapper_class if wrapper_class.present?
 
-        hidden_field_tag("#{f.object_name}[_destroy]", f.object._destroy) + link_to(name, '#', html_options)
+        f.hidden_field(:_destroy, value: f.object._destroy) + link_to(name, '#', html_options)
       end
     end
 
     # :nodoc:
-    def render_association(association, f, new_object, form_name, render_options={}, custom_partial=nil)
+    def render_association(association, f, new_object, form_name, received_render_options={}, custom_partial=nil)
       partial = get_partial_path(custom_partial, association)
+      render_options = received_render_options.dup
       locals =  render_options.delete(:locals) || {}
       ancestors = f.class.ancestors.map{|c| c.to_s}
       method_name = ancestors.include?('SimpleForm::FormBuilder') ? :simple_fields_for : (ancestors.include?('Formtastic::FormBuilder') ? :semantic_fields_for : :fields_for)
@@ -126,7 +127,7 @@ module Cocoon
     end
 
     def create_object_on_association(f, association, instance, force_non_association_create)
-      if instance.class.name == "Mongoid::Relations::Metadata" || force_non_association_create
+      if instance.class.name.starts_with?('Mongoid::') || force_non_association_create
         create_object_with_conditions(instance)
       else
         assoc_obj = nil

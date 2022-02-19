@@ -220,9 +220,9 @@ chrome-trace-event@^1.0.2:
   resolved "https://registry.npmjs.org/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz"
   integrity sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==
 
-"cocoon@github:nathanvda/cocoon#c24ba53":
-  version "1.2.10"
-  resolved "https://codeload.github.com/nathanvda/cocoon/tar.gz/c24ba53b40e688e7d8b7212824139ec7f352a242"
+"cocoon@https://github.com/nathanvda/cocoon.git":
+  version "0.0.0"
+  resolved "https://github.com/nathanvda/cocoon.git#47ba8aee55a1d94c6f3252c45a713e3c8057d812"
 
 commander@^2.20.0:
   version "2.20.3"

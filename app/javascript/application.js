@@ -3,7 +3,9 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 
-import 'cocoon';
+import "jquery"
+import "bootstrap"
+import "./src/cocoon.js"
 
 //= require jquery
 //= require jquery_ujs
