@@ -4,7 +4,7 @@
 <div id="recipes" class="container">
   <h1>Recipes</h1>
   <%= link_to "New Recipe", new_recipe_path, :class => "btn btn-primary" %>
-  <div class="row">
+  <div class="row pt-5">
   <% @recipes.each do |recipe| %>
     <div class="col-md-3">
       <div class="recipe-card mb-4">
