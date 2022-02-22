@@ -3,7 +3,7 @@
 
 <div id="recipes" class="container">
   <h1>Recipes</h1>
-
+  <%= link_to "New Recipe", new_recipe_path, :class => "btn btn-primary" %>
   <div class="row">
   <% @recipes.each do |recipe| %>
     <div class="col-md-3">
@@ -12,7 +12,7 @@
 
           <%= render recipe %>
           <p>
-            <%= link_to "Show this recipe", recipe %>
+            <%= link_to "Show this recipe", recipe, :class => "btn btn-primary" %>
           </p>
       </div><!-- recipe-card-->
       </div><!-- col-md-3-->
@@ -20,4 +20,4 @@
 </div><!-- row-->
 </div>
 
-<%= link_to "New recipe", new_recipe_path %>
+
