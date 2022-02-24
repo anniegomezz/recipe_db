@@ -8,11 +8,11 @@
   <% @recipes.each do |recipe| %>
     <div class="col-md-3">
       <div class="recipe-card mb-4">
-         <%= image_tag recipe.image.url, class: "recipe-show" if recipe.image? %>
+         <%= image_tag recipe.image.url, class: "recipe-index" if recipe.image? %>
 
           <%= render recipe %>
           <p>
-            <%= link_to "Show this recipe", recipe, :class => "btn btn-primary" %>
+            <%= link_to "View Recipe", recipe, :class => "btn btn-secondary" %>
           </p>
       </div><!-- recipe-card-->
       </div><!-- col-md-3-->

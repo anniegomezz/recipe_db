@@ -1,15 +1,5 @@
 @import "bootstrap";
 
-html{
-    font-size:  16px;
-}
-
-img.recipe-show {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: center center;
-}
 /* Global Styles*/
 .btn-primary{
     border-radius:  30px;
@@ -20,27 +10,96 @@ img.recipe-show {
 }
 
 .btn-primary:hover{
-    background:  lightgray;
+    background-color:  lightgray;
     color: #766dd6;;
 }
 
+.btn-secondary{
+    border-radius:  30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #b01e67;
+    border:  none;
+}
+
+.btn-secondary:hover{
+    background-color:  lightpink;
+    color: #b01e67;
+}
+
+/* Index View Styles */
+
 .recipe-card {
+    display: flex;
     background: whitesmoke;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
     flex-direction:  column;
     align-items: center;
 }
 .recipe-card h2{
-    text-transform:  uppercase;
-    letter-spacing: 2.4px;
+    text-align:  center;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.recipe-card p{
+    text-align:  center;
+    font-size:  .8rem;
 }
 .recipe-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
+
+/* Show View Styles */
+
+img.recipe-show {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.show-hero{
+    height:  450px;
+    position:  relative;
+}
+
+.show-hero-overlay{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    display:  flex;
+    align-items:  center;
+    justify-content: center;
+    height:  inherit;
+    width: 100%;
+    background-color: rgba(118, 165, 222, 0.4);
+}
+
+.show-hero-overlay h2{
+    text-align:  center;
+    color:  white;
+    font-size: 3rem;
+}
+
+.show-hero-overlay p{
+    text-align: center;
+    color:  white;
+}
+
+.show-hero-overlay>div{
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+
 /* other stuff */
 @media only screen and (max-width:  768px){
     html{
