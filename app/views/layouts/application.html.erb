@@ -10,6 +10,21 @@
     <%= javascript_importmap_tags %>
   </head>
 
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded"> 
+
+  <%= link_to "Recipe App", root_path, class: 'navbar-brand' %>
+
+ 
+
+    <ul class="navbar-nav navbar-right">
+
+      <li><%= link_to "About", pages_about_path %></li>
+
+    </ul>
+
+</nav>
+
+
   <body>
     <%= yield %>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
