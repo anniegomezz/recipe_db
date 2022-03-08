@@ -42,17 +42,17 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'cocoon'
 gem 'carrierwave'
-
+gem 'fog-aws'
 # Use Sass to process CSS
 gem "sassc-rails"
 gem 'bootstrap', '~> 4.6.1'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-#group :production do 
-#  gem 'pg'
-#  gem 'rails_12factor'
-#end
+group :production do 
+ gem 'pg'
+  gem 'rails_12factor'
+end
 
 
 
