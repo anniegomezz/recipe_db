@@ -70,7 +70,10 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.4.2.0)
       execjs (~> 2)
+<<<<<<< HEAD
     bcrypt (3.1.17)
+=======
+>>>>>>> 86fcb72808291dfa8d99c6836391920f1617e4b1
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
@@ -103,12 +106,15 @@ GEM
     debug (1.4.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
+<<<<<<< HEAD
     devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+=======
+>>>>>>> 86fcb72808291dfa8d99c6836391920f1617e4b1
     digest (3.1.0)
     erubi (1.10.0)
     excon (0.91.0)
@@ -183,7 +189,11 @@ GEM
     nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+<<<<<<< HEAD
     orm_adapter (0.5.0)
+=======
+    pg (1.3.3)
+>>>>>>> 86fcb72808291dfa8d99c6836391920f1617e4b1
     popper_js (1.16.0)
     public_suffix (4.0.6)
     puma (5.6.2)
@@ -227,9 +237,12 @@ GEM
     regexp_parser (2.2.1)
     reline (0.3.1)
       io-console (~> 0.5)
+<<<<<<< HEAD
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+=======
+>>>>>>> 86fcb72808291dfa8d99c6836391920f1617e4b1
     rexml (3.2.5)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
@@ -266,8 +279,11 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+<<<<<<< HEAD
     warden (1.2.9)
       rack (>= 2.0.9)
+=======
+>>>>>>> 86fcb72808291dfa8d99c6836391920f1617e4b1
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -294,10 +310,17 @@ DEPENDENCIES
   carrierwave
   cocoon
   debug
+<<<<<<< HEAD
   devise
   fog-aws
   importmap-rails
   jbuilder
+=======
+  fog-aws
+  importmap-rails
+  jbuilder
+  pg
+>>>>>>> 86fcb72808291dfa8d99c6836391920f1617e4b1
   puma (~> 5.0)
   rails (~> 7.0.2)
   rails_12factor
