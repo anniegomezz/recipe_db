@@ -51,7 +51,7 @@ gem 'bootstrap', '~> 4.6.1'
 # gem "image_processing", "~> 1.2"
 
 group :production do 
- #gem 'pg'
+ gem 'pg'
   gem 'rails_12factor'
 end
 
