@@ -1,24 +1,34 @@
 @import "bootstrap";
 
 /* Global Styles*/
+
+html{
+    font-size: 16px;
+    font-family: Georgia, serif;
+}
+
+body{
+    background-color: #f5cca4;
+}
+
 .btn-primary{
     border-radius:  30px;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: #766dd6;
+    background-color: #308eab;
     border:  none;
 }
 
 .btn-primary:hover{
     background-color:  lightgray;
-    color: #766dd6;;
+    color: #766dd6;
 }
 
 .btn-secondary{
     border-radius:  30px;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: #b01e67;
+    background-color: #308eab;
     border:  none;
 }
 
@@ -63,6 +73,7 @@ img.recipe-show {
     height: inherit;
     object-fit: cover;
     object-position: center center;
+    background-color: #f5cca4;
 }
 
 .show-hero{
